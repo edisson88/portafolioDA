@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edisson Otalora</title>
+    <!-- link de CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/blogstyles.css"
+    
+    <!-- link de iconos -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" >
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+           emailjs.init({
+             publicKey: "a4pwAdr17rspPxGkC",
+           });
+        })();
+     </script>
+</head>
+<body>
+    <header>
+        <nav class="nav-container" id="nav">
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../index.html#skills" class="nav-link">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../index.html#projects" class="nav-link">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact-me" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+    </header>
+    <section class="head-blog" id="head-blog">
+            <div class="project-info">
+                <h3>SQL & Power BI | Revenue Analysis Dashboard</h3>
+            </div>
+            <hr class="section-separator">
+    </section>
+    <section class="blog-body" id="blog-body">
+        <section class="blog-container" id="blog-container">
+            <img src="../src/img/project-img.jpg" alt="Imagen del Proyecto">
+            <h4>Made for Iridium in my role as a Power BI Developer. Recreated with dummy metrics.</h4>
+            <p>Developed SQL script and Power BI report to replace 2 twice-weekly manual processes, saving the company 152+ hours annually in addition to providing filtering capabilities to the report.</p> 
+            <h4>This report answers the following business questions:</h4>
+            <p>1. What are the current month and previous month balances as well as the variance, variance %, and monthly averages?</p>
+            <p>2. What are the current month and previous month balances as well as the variance, variance %, and monthly averages by customer?</p>
+            <p>3. What are the current month and previous month balances as well as the variance, variance %, and monthly averages by product?</p>
+            <h4>I took the following steps to complete the dashboard:</h4>
+            <p>1. Exported raw data into Excel and formatted to prepare for Tableau ingestion.</p>
+            <p>2. Connected Excel file to Tableau report.</p>
+            <p>3. Created calculated fields to calculate the metrics needed for the report.</p>
+            <p>4. Created a dashboard with filters to allow users to filter by customer, product, and date.</p>
+            <p>5. Created a report to show the current month and previous month balances as well as the variance, variance %, and monthly averages.</p>
+            <h4>2. Connected Excel file to Tableau report</h4>
+            <img src="../src/img/project-img.jpg" alt="Imagen del Proyecto">
+            <p>Each is modeled in a similar style but tracks metrics specific to that service.
+                All charts included in report below were required by leadership.</p>>
+            <h4>Conclusion:</h4>
+            <p>By automating the process, I saved the company 152+ hours annually in addition to providing filtering capabilities to the report.</p>   
+        </section>
+    </section>
+
+    
+    <section class="contact-me" id="contact-me">
+        <hr class="section-separator">
+        <div class="contact-me container" id="contact-me-container">
+            <h2 class="contact-me-title"> Gracias! </h2>
+            <i class='bx bx-minus'></i> 
+            <p>Thank you for taking the time to visit my portfolio!</p>
+            <p>If you'd like to chat about me joining your team, feel free to email me using the form below 👇</p>
+            <h2 class="contact-me-title"> Cantacta Conmigo </h2>
+            <form class="contact-form" id="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Nombre" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Correo" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="5" placeholder="Mensaje" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Enviar</button>
+            </form>
+            <br>
+            <hr class="section-separator">
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/edisson-eduardo-otálora-murcia-22172289" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/tu-perfil-github" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.youtube.com/@elinstruonline8866" target="_blank"><i class='bx bxl-youtube'></i></a>
+                <a href="mailto:edisson.otalora7@gmail.com"><i class='bx bx-envelope'></i></a>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    <!-- link to js-->
+    <script src="../js/main.js"></script>
+
+</body>
+</html>

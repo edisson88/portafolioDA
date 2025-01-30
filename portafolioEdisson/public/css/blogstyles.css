@@ -1,0 +1,104 @@
+/*-- Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: "Poppins", serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-padding: 2rem;
+    box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+    --container-color: #f5f5f5;
+    --second-color: #f8f8f8;
+    --text-color: #666363;
+    --text-light-color: #0a0a0a;
+    --bg-color: #fff;
+    --primary-color: #4A90E2;
+    --secondary-color: #666363;
+    --hover-color: #666363;
+}
+
+::selection {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    padding: 2rem 0;
+}
+.head-blog{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinea los elementos hijos a la izquierda */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    padding: 2rem;
+    box-sizing: border-box;
+    padding-top: 5rem;   
+}
+
+
+.blog-body {
+    display: flex;
+    justify-content: center; /* Centra el contenedor del blog horizontalmente */
+    padding: 0; /* Elimina el padding para que ocupe todo el ancho */
+    margin: 0; /* Elimina el margen para que ocupe todo el ancho */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+}
+
+.blog-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinea los elementos hijos a la izquierda */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    padding: 2rem;
+    box-sizing: border-box;
+   
+}
+
+.blog-container img {
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.blog-container h3,
+.blog-container h4,
+.blog-container p {
+    text-align: left; /* Alinea el texto a la izquierda */
+    width: 80%; /* Asegura que el texto ocupe todo el ancho del contenedor */
+    margin-left: 0; /* Asegura que no haya margen izquierdo adicional */
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
