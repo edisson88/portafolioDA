@@ -24,7 +24,8 @@
     <header>
         <nav class="nav-container" id="nav">
             <div class="nav-menu" id="nav-menu">
-                <ul class="nav-list">
+                <div class="nav-menu-toggle" onclick="toggleMenu()">☰</div> <!-- Ícono de menú -->
+                <ul class="nav-list" id="nav-list">
                     <li class="nav-item">
                         <a href="#home" class="nav-link">Inicio</a>
                     </li>
@@ -96,13 +97,13 @@
             </div>
         </div>
     </section>
+    
     <section class="projects" id="projects">
         <hr class="section-separator">
         <a href="#projects-container" class="scroll-icon">
             <i class='bx bx-down-arrow-alt'></i>
         </a>
         <h2 class="projects-title">Proyectos Desarrollados</h2>
-        <i class='bx bx-minus'></i>
         <br>
         <div class="projects-container" id="projects-container">
             <div class="project">
@@ -117,7 +118,6 @@
                 </div>
             </div>
         </div>
-        <i class='bx bx-minus'></i>
         <br>
         <hr class="section-separator">
         <div class="projects-container" id="projects-container">
@@ -148,7 +148,6 @@
                 </div>
             </div>
         </div>
-        <i class='bx bx-minus'></i>
         <br>
         <hr class="section-separator">
         <div class="projects-container" id="projects-container">

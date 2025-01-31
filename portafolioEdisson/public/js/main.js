@@ -1,3 +1,7 @@
+function toggleMenu() {
+    const navList = document.getElementById("nav-list");
+    navList.classList.toggle("active");
+}
 
 //Script para mostrar y ocultar el menú de navegación en dispositivos móviles
 let lastScrollTop = 0;

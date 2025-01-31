@@ -43,44 +43,6 @@ section {
     padding: 2rem 0;
 }
 
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: var(--primary-color);
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-    transition: top 0.5s ease-in-out;
-}
-
-.nav-list {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.nav-menu {
-    margin-left: auto;
-}
-
-.nav-item {
-    margin: 0 1rem;
-}
-
-.nav-link {
-    text-decoration: none;
-    color: var(--container-color);
-    font-size: 1rem;
-    transition: color 0.3s;
-}
-
-.nav-link:hover {
-    color: var(--text-color);
-}
 
 .home {
     display: flex;
@@ -316,3 +278,135 @@ i {
 .submit-button:hover {
     background-color: var(--hover-color);
 }
+
+/* Estilos generales de la navegación */
+
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--primary-color);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    transition: top 0.5s ease-in-out;
+}
+
+.nav-menu {
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    margin: 0 1rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--container-color);
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--text-color);
+}
+
+
+/* Botón del menú hamburguesa (oculto en pantallas grandes) */
+.nav-menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--container-color);
+}
+
+/* Estilos para pantallas pequeñas (responsive) */
+@media screen and (max-width: 768px) {
+    .nav-menu-toggle {
+        display: block; /* Muestra el botón hamburguesa */
+    }
+
+    .nav-list {
+        display: none; /* Oculta la lista en móviles */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: var(--primary-color);
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-list.active {
+        display: flex; /* Muestra la lista cuando está activa */
+    }
+
+    .nav-item {
+        padding: 10px 0;
+    }
+
+
+    .home {
+        padding-top: 7rem;
+    }
+
+    .home-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    .social-icons a {
+        font-size: 1.5rem;
+    }
+
+    .button {
+        width: 100%;
+        max-width: 200px;
+        text-align: center;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .skills-img {
+        width: 80%;
+    }
+
+    .list-skills ul {
+        columns: 1;
+        text-align: center;
+    }
+
+    .contact-form {
+        width: 90%;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+    }
+
+}
+
