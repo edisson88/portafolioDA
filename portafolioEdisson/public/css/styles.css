@@ -123,6 +123,10 @@ i {
     height: 3rem 0 2rem;
 }
 
+.projects-mobile{
+    display: none;
+}
+
 .section-separator {
     border: none;
     border-top: 2px solid var(--text-light-color);
@@ -380,15 +384,73 @@ i {
     }
 
     .button {
-        width: 100%;
+        width: 80%;
         max-width: 200px;
         text-align: center;
     }
 
-    .projects-container {
+    .projects-mobile-container {
+        display: flex;
         grid-template-columns: 1fr;
         gap: 1rem;
+        align-items: center;
+        text-align: center;
+        height: 3rem 0 2rem;
+        width: 80%;
     }
+    .projects-mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 3rem 0 2rem;
+    }
+
+    .project-info h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .project-info h4 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .project-info p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .project-button {
+        padding: 0.5rem 0.5rem;
+        background-color: var(--primary-color);
+        color: var(--bg-color);
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .project-button:hover {
+        background-color: var(--hover-color);
+    }
+    
+    .project-image img {
+        width: 80%;
+        border-radius: 5px;
+    }
+    .project {
+        display: flex;
+        flex-direction: column; /* Orden en columna */
+        align-items: center;
+        text-align: center; /* Centrar texto */
+    }
+
+    .projects{
+        display: none;
+    }
+
 
     .skills-img {
         width: 80%;
@@ -407,6 +469,6 @@ i {
     .form-group textarea {
         width: 100%;
     }
-
+    
 }
 
